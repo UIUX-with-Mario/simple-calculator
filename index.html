@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <p class="header" id="header"> Simple Calculator</p>
+        <input type="text" placeholder="input first number" class="input" id="first-number">
+        <input type="text" placeholder="input second number" class="input" id="second-number">
+        <div class="operators">
+            <button class="operator" onclick="calculateNumbers('+')">+</button>
+            <button class="operator" onclick="calculateNumbers('-')">-</button>
+            <button class="operator" onclick="calculateNumbers('×')">×</button>
+            <button class="operator" onclick="calculateNumbers('÷')">÷</button>
+        </div>
+        <div class="results" id="results" >
+        </div>
+
+        <p class="copywright-text">© 2026 Mario Joseph. Built with passion. All rights reserved.</p>
+    </div>
+    <script src="src/js/script.js"></script>
+</body>
+</html>
